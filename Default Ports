@@ -1,0 +1,126 @@
+
+Default Ports
+
+Ports utilised by default do depend on what operating system platform you are running.  Having a general idea of what default ports are open on a host is a good way to "fingerprint" it.  Knowing what services run on these ports also allows you to carry out a great deal of enumeration by banner grabbing to obtain version and system information.  From this information you can then plan your next step when carrying out the vulnerability assessment of the entire system.
+The full listing from IANA is available locally, (790kb) zipped, (226kb) or from their site.
+
+Default Unix Ports
+
+| Service                                          | Port        |
+|--------------------------------------------------|-------------|
+| Echo                                             | 7           |
+| Daytime                                          | 13          |
+| qotd (Quote Of The Day)                          | 17          |
+| FTP-data                                         | 20          |
+| FTP                                              | 21          |
+| SSH                                              | 22          |
+| Telnet                                           | 23          |
+| SMTP (Simple Mail Transfer Protocol)             | 25          |
+| Time server                                      | 37          |
+| Whois                                            | 43          |
+| DNS (Domain Name System)                         | 53          |
+| TFTP (Trivial File Transfer Protocol)            | 69          |
+| Finger                                           | 79          |
+| HTTP (Hypertext Transfer Protocol)               | 80          |
+| POP2 (Post Office Protocol 2)                    | 109         |
+| POP3 (Post Office Protocol 3)                    | 110         |
+| Portmapper                                       | 111         |
+| Ident                                            | 113         |
+| NNTP (Network News Transfer Protocol)            | 119         |
+| NTP (Network Time Protocol)                      | 123         |
+| Samba                                            | 137-9       |
+| IMAP2 (Internet Message Access Protocol)         | 143         |
+| SNMP (Simple Network Management Protocol)        | 161         |
+| BGP (Border Gateway Protocol)                    | 179         |
+| IMAP3 (Internet Message Access Protocol)         | 220         |
+| LDAP (Lightweight Directory Access Protocol)     | 389         |
+| HTTPS (Secure Hypertext Transfer Protocol)       | 443         |
+| rlogin                                           | 513         |
+| rsh                                              | 514         |
+| Line printer (lpr) spooler                       | 515         |
+| Talk                                             | 517         |
+| Time server                                      | 525         |
+| NNTPS (Secure Network News Transfer Protocol)    | 563         |
+| IPP (Internet Printing Protocol)                 | 631         |
+| LDAPS (Secure Lightweight Directory Access Protocol) | 636     |
+| IMAPS (Secure Internet Message Access Protocol) | 993          |
+| POP3S (Secure Post Office Protocol)             | 995          |
+| NFS (Network File System)                       | 2049         |
+| MySQL                                           | 3306         |
+| X11                                             | 6000-6063    |
+| XFS (X Font Server)                             | 7100         |
+
+
+
+Default Windows Ports
+
+| Service                                          | Port        |
+|--------------------------------------------------|-------------|
+| FTP (default data channel)                       | 20          |
+| FTP (control channel)                            | 21          |
+| Telnet                                           | 23          |
+| Whois                                            | 43          |
+| Domain Name System                               | 53          |
+| Bootp server                                     | 67          |
+| Bootp client                                     | 68          |
+| Trivial FTP                                      | 69          |
+| Gopher                                           | 70          |
+| HTTP                                             | 80          |
+| Kerberos                                         | 88          |
+| POP-2 (Post Office Protocol)                     | 109         |
+| POP-3                                            | 110         |
+| NNTP (Network News Transfer Protocol)            | 119         |
+| NT (Network Time Protocol)                       | 123         |
+| NT RPC endpoint mapper                           | 135         |
+| NetBIOS Name Service                             | 137         |
+| NetBIOS Datagram Service                         | 138         |
+| NetBIOS Session Service                          | 139         |
+| IMAP (Internet Message Access Protocol)          | 143         |
+| SNMP                                             | 161         |
+| SNMP Trap                                        | 162         |
+| BGP (Border Gateway Protocol)                    | 179         |
+| IRC (Internet Relay Chat)                        | 194         |
+| Computer Associates License Server               | 216         |
+| Checkpoint Firewall Management                   | 256         |
+| Checkpoint Firewall Log Management               | 257         |
+| Checkpoint Firewall Management                   | 258         |
+| Checkpoint VPN-1 FWZ Key Management              | 259         |
+| Checkpoint Alternate SNMP                        | 260         |
+| Checkpoint Firewall Management                   | 261         |
+| Checkpoint Firewall Topology Download            | 264         |
+| Checkpoint VPN-1 Public Key Transfer Protocol    | 265         |
+| LDAP (Lightweight Directory Access Protocol)     | 389         |
+| HTTP over SSL                                    | 443         |
+| SNMP (Simple Network Paging Protocol)            | 444         |
+| Microsoft Direct SMB                             | 445         |
+| Kerberos Password                                | 464         |
+| IKE (IPSEC Internet Key Exchange)                | 500         |
+| RIP (Routing Information Protocol)               | 520         |
+| Netware Core Protocol                            | 524         |
+| Kerberos Login                                   | 543         |
+| Kerberos Shell                                   | 544         |
+| NNTPS (Secure NNTP)                              | 563         |
+| HTTP RPC Endpoint Mapper                         | 593         |
+| SOCKS Proxy                                      | 1080        |
+| SOCKS Proxy alternate                            | 1081        |
+| Kazaa Network                                    | 1214        |
+| Nessus                                           | 1241        |
+| Microsoft Operations Manager (MOM)               | 1270        |
+| Microsoft SQL Server                             | 1433        |
+| Microsoft SQL Monitor service                    | 1434        |
+| Citrix                                           | 1494        |
+| Sybase                                           | 1498        |
+| Oracle TNS Listener                              | 1521        |
+| Point-to-Point Tunneling Protocol (PPTP)         | 1723        |
+| Winsock-proxy                                    | 1745        |
+| Remotely Anywhere                                | 2000        |
+| Cisco device management, Remotely Anywhere       | 2001        |
+| Compaq Insight Manager                           | 2301        |
+| Secure Compaq Insight Manager                    | 2381        |
+| Terminal Services                                | 3389        |
+| Cisco device management                          | 4001        |
+| PC Anywhere                                      | 5631-2      |
+        
+
+
+http://www.vulnerabilityassessment.co.uk/ports.htm
