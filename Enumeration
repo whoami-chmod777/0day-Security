@@ -26,11 +26,11 @@
 • Fingerprint server
    → telnet ip_address 22 (banner grab)
    → scanssh
-            scanssh -p -r -e excludes random(no.)/Network_ID/Subnet_Mask
+      ► scanssh -p -r -e excludes random(no.)/Network_ID/Subnet_Mask
 • Password guessing
    → ssh root@ip_address
    → guess-who
-            ./b -l username -h ip_address -p 22 -2 < password_file_location
+      ► ./b -l username -h ip_address -p 22 -2 < password_file_location
    → Hydra brute force
    → brutessh
    → Ruby SSH Bruteforcer
