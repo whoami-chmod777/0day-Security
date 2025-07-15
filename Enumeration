@@ -46,7 +46,8 @@
    → putty
    → winscp
 
-Telnet port 23 open
+
+>> Telnet port 23 open <<
 
     Fingerprint server
         telnet ip_address
