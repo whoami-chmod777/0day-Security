@@ -9,7 +9,7 @@ Default Port Lists
    
 Enumeration tools and techniques - The vast majority can be used generically, however, certain bespoke application require there own specific toolsets to be used. Default passwords are platform and vendor specific
 
--- General Enumeration Tools --
+>> General Enumeration Tools <<
             
 nmap
 • nmap -n -A -PN -p- -T Agressive -iL nmap.targetlist -oX nmap.syn.results.xml
@@ -51,7 +51,7 @@ fping
 • fping -a -d hostname/ (Network/Subnet_Mask)
 
 
--- Firewall Specific Tools --
+>> Firewall Specific Tools <<
 
 firewalk
 • firewalk -p [protocol] -d [destination_port] -s [source_port] [internal_IP] [gateway_IP]
@@ -60,7 +60,7 @@ ftester
 • host 1 ./ftestd -i eth0 -v host 2 ./ftest -f ftest.conf -v -d 0.01 then ./freport ftest.log ftestd.log
 
 
--- Active Hosts --
+>> Active Hosts <<
        
 • Open TCP Ports
 • Closed TCP Ports
