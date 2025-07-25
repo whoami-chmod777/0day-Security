@@ -1,0 +1,12 @@
+
+AT
+OK
+AT+CMGF=1
+OK
+AT+CMGW="+49172312345"
+>Body of the text message here!
++CMGW: 1
+OK
+AT+CMSS=1
++CMSS: 20
+OK
