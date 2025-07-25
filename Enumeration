@@ -1,6 +1,39 @@
 
 --- Enumeration ---
 
+• FTP port 21 open 
+• SSH port 22 open 
+• Telnet port 23 open 
+• Sendmail Port 25 open 
+• DNS port 53 open 
+• TFTP port 69 open 
+• Finger Port 79 open 
+• Web Ports 80, 8080 etc. open 
+• Portmapper port 111 open
+• NTP Port 123 open 
+• NetBIOS Ports 135-139,445 open 
+• SNMP port 161 open 
+• LDAP Port 389 Open 
+• PPTP/L2TP/VPN port 500/1723 open 
+• Modbus port 502 open 
+• rlogin port 513 open 
+• rsh port 514 open 
+• SQL Server Port 1433 1434 open 
+• Citrix port 1494 open 
+• Oracle Port 1521 Open 
+• NFS Port 2049 open 
+• Compaq/HP Insight Manager Port 2301,2381open 
+• MySQL port 3306 open 
+• RDesktop port 3389 open 
+• Sybase Port 5000+ open 
+• SIP Port 5060 open 
+• VNC port 5900^ open 
+• X11 port 6000^ open 
+• Tor Port 9001, 9030 open 
+• Jet Direct 9100 open 
+
+
+
 >> FTP port 21 open <<
 
 • Fingerprint server
@@ -49,22 +82,23 @@
 
 >> Telnet port 23 open <<
 
-    Fingerprint server
-        telnet ip_address
-            Common Banner ListOS/BannerSolaris 8/SunOS 5.8Solaris 2.6/SunOS 5.6Solaris 2.4 or 2.5.1/Unix(r) System V Release 4.0 (hostname)SunOS 4.1.x/SunOS Unix (hostname)FreeBSD/FreeBSD/i386 (hostname) (ttyp1)NetBSD/NetBSD/i386 (hostname) (ttyp1)OpenBSD/OpenBSD/i386 (hostname) (ttyp1)Red Hat 8.0/Red Hat Linux release 8.0 (Psyche)Debian 3.0/Debian GNU/Linux 3.0 / hostnameSGI IRIX 6.x/IRIX (hostname)IBM AIX 4.1.x/AIX Version 4 (C) Copyrights by IBM and by others 1982, 1994.IBM AIX 4.2.x or 4.3.x/AIX Version 4 (C) Copyrights by IBM and by others 1982, 1996.Nokia IPSO/IPSO (hostname) (ttyp0)Cisco IOS/User Access VerificationLivingston ComOS/ComOS - Livingston PortMaster
-        telnetfp
-    Password Attack
+• Fingerprint server
+   → telnet ip_address
+      ► Common Banner ListOS/BannerSolaris 8/SunOS 5.8Solaris 2.6/SunOS 5.6Solaris 2.4 or 2.5.1/Unix(r) System V Release 4.0 (hostname)SunOS 4.1.x/SunOS Unix (hostname)FreeBSD/FreeBSD/i386 (hostname) (ttyp1)NetBSD/NetBSD/i386 (hostname) (ttyp1)OpenBSD/OpenBSD/i386 (hostname) (ttyp1)Red Hat 8.0/Red Hat Linux release 8.0 (Psyche)Debian 3.0/Debian GNU/Linux 3.0 / hostnameSGI IRIX 6.x/IRIX (hostname)IBM AIX 4.1.x/AIX Version 4 (C) Copyrights by IBM and by others 1982, 1994.IBM AIX 4.2.x or 4.3.x/AIX Version 4 (C) Copyrights by IBM and by others 1982, 1996.Nokia IPSO/IPSO (hostname) (ttyp0)Cisco IOS/User Access VerificationLivingston ComOS/ComOS - Livingston PortMaster
+   → telnetfp
 
-        Common passwords
-        Hydra brute force
-        Brutus
-        telnet -l "-froot" hostname (Solaris 10+)
-    Examine configuration files
-        /etc/inetd.conf
-        /etc/xinetd.d/telnet
-        /etc/xinetd.d/stelnet
+• Password Attack
+   → Common passwords
+   → Hydra brute force
+   → Brutus
+   → telnet -l "-froot" hostname (Solaris 10+)
 
-Sendmail Port 25 open
+• Examine configuration files
+   → /etc/inetd.conf
+   → /etc/xinetd.d/telnet
+   → /etc/xinetd.d/stelnet
+
+>> Sendmail Port 25 open <<
 
     Fingerprint server
         telnet ip_address 25 (banner grab)
@@ -96,7 +130,7 @@ Sendmail Port 25 open
         sendmail.cf
         submit.cf
 
-DNS port 53 open
+>> DNS port 53 open <<
 
     Fingerprint server/ service
         host
@@ -125,7 +159,7 @@ DNS port 53 open
         resolv.conf
         named.conf
 
-TFTP port 69 open
+>> TFTP port 69 open <<
 
     TFTP Enumeration
         tftp ip_address PUT local_file
@@ -136,7 +170,7 @@ TFTP port 69 open
         TFTP bruteforcer
         Cisco-Torch
 
-Finger Port 79 open
+>> Finger Port 79 open <<
 
     User enumeration
         finger 'a b c d e f g h' @example.com
@@ -154,7 +188,7 @@ Finger Port 79 open
         finger user@host@victim
         finger @internal@external
 
-Web Ports 80, 8080 etc. open
+>> Web Ports 80, 8080 etc. open
 
     Fingerprint server
         Telnet ip_address port
@@ -376,14 +410,14 @@ Web Ports 80, 8080 etc. open
         Metasploit
         w3af
 
-Portmapper port 111 open
+>> Portmapper port 111 open <<
 
     rpcdump.py
         rpcdump.py username:password@IP_Address port/protocol (i.e. 80/HTTP)
     rpcinfo
         rpcinfo [options] IP_Address
 
-NTP Port 123 open
+>> NTP Port 123 open <<
 
     NTP Enumeration
         ntpdc -c monlist IP_ADDRESS
@@ -397,7 +431,7 @@ NTP Port 123 open
     Examine configuration files
         ntp.conf
 
-NetBIOS Ports 135-139,445 open
+>> NetBIOS Ports 135-139,445 open <<
 
     NetBIOS enumeration
         Enum
@@ -422,7 +456,7 @@ NetBIOS Ports 135-139,445 open
         Smb.conf
         lmhosts
 
-SNMP port 161 open
+>> SNMP port 161 open <<
 
     Default Community Strings
         public
@@ -458,7 +492,7 @@ SNMP port 161 open
         snmpd.conf
         snmp-config.xml
 
-LDAP Port 389 Open
+>> LDAP Port 389 Open <<
 
     ldap enumeration
         ldapminer
@@ -500,7 +534,7 @@ LDAP Port 389 Open
         Sun ONE Directory Server 5.1
             75sas.ldif
 
-PPTP/L2TP/VPN port 500/1723 open
+>> PPTP/L2TP/VPN port 500/1723 open <<
 
     Enumeration
         ike-scan
@@ -512,11 +546,11 @@ PPTP/L2TP/VPN port 500/1723 open
         SecurityFocus Infocus
         Scanning a VPN Implementation
 
-Modbus port 502 open
+>> Modbus port 502 open <<
 
     modscan
 
-rlogin port 513 open
+>> rlogin port 513 open <<
 
     Rlogin Enumeration
         Find the files
@@ -532,7 +566,7 @@ rlogin port 513 open
     Rlogin Brute force
         Hydra
 
-rsh port 514 open
+>> rsh port 514 open <<
 
     Rsh Enumeration
         rsh host [-l username] [-n] [-d] [-k realm] [-f | -F] [-x] [-PN | -PO] command
@@ -541,7 +575,7 @@ rsh port 514 open
         Hydra
         medusa
 
-SQL Server Port 1433 1434 open
+>> SQL Server Port 1433 1434 open <<
 
     SQL Enumeration
         piggy
@@ -562,7 +596,7 @@ SQL Server Port 1433 1434 open
         SQLlhf
         ForceSQL
 
-Citrix port 1494 open
+>> Citrix port 1494 open <<
 
     Citrix Enumeration
         Default Domain
@@ -577,7 +611,7 @@ Citrix port 1494 open
             Hacking Citrix - the legitimate backdoor
             Hacking Citrix - the forceful way
 
-Oracle Port 1521 Open
+>> Oracle Port 1521 Open <<
 
     Oracle Enumeration
         oracsec
@@ -647,14 +681,11 @@ Oracle Port 1521 Open
         SQL Cheatsheets
 
             http://ha.ckers.org/sqlinjection
-
             http://ferruh.mavituna.com/sql-injection-cheatsheet-oku/
-
             http://www.0x000000.com/?i=14
-
             http://pentestmonkey.net/ 
 
-NFS Port 2049 open
+>> NFS Port 2049 open <<
 
     NFS Enumeration
         showmount -e hostname/ip_address
@@ -687,7 +718,7 @@ Compaq/HP Insight Manager Port 2301,2381open
         jboss-service.xml
         .namazurc
 
-MySQL port 3306 open
+>> MySQL port 3306 open <<
 
     Enumeration
         nmap -A -n -p3306 <IP Address>
@@ -769,7 +800,7 @@ MySQL port 3306 open
         http://cve.mitre.org/cgi-bin/cvekey.cgi?keyword=mysql
         http://search.securityfocus.com/swsearch?sbm=%2F&metaname=alldoc&query=mysql&x=0&y=0
 
-RDesktop port 3389 open
+>> RDesktop port 3389 open <<
 
     Rdesktop Enumeration
         Remote Desktop Connection
@@ -778,7 +809,7 @@ RDesktop port 3389 open
             tsgrinder.exe -w dictionary_file -l leet -d workgroup -u administrator -b -n 2 IP_Address
         Tscrack
 
-Sybase Port 5000+ open
+>> Sybase Port 5000+ open <<
 
     Sybase Enumeration
         sybase-version ip_address from NGS
@@ -792,7 +823,7 @@ Sybase Port 5000+ open
                 More Advanced SQL Injection
         NGS Squirrel for Sybase
 
-SIP Port 5060 open
+>> SIP Port 5060 open <<
 
     SIP Enumeration
         netcat
@@ -827,7 +858,7 @@ SIP Port 5060 open
         phone1.cfg
         sip.cfg etc. etc.
 
-VNC port 5900^ open
+>> VNC port 5900^ open <<
 
     VNC Enumeration
         Scans
@@ -854,7 +885,7 @@ VNC port 5900^ open
         /etc/sysconfig/vncservers
         /etc/vnc.conf
 
-X11 port 6000^ open
+>> X11 port 6000^ open <<
 
     X11 Enumeration
         List open windows
@@ -880,14 +911,14 @@ X11 port 6000^ open
         /usr/lib/X11/xdm/xdm-config
             DisplayManager*authorize:on
 
-Tor Port 9001, 9030 open
+>> Tor Port 9001, 9030 open <<
 
     Tor Node Checker
         Ip Pages
         Kewlio.net
     nmap NSE script
 
-Jet Direct 9100 open
+>> Jet Direct 9100 open <<
 
     hijetta 
 
